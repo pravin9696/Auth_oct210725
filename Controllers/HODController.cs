@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Auth_oct210725.Controllers
 {
-  
+    [Authorize]
     public class HODController : Controller
     {
         // GET: HOD

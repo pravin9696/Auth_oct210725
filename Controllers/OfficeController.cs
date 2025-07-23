@@ -13,6 +13,16 @@ namespace Auth_oct210725.Controllers
         // GET: Office
         public ActionResult Index()
         {
+            using (var dbo = new DB_authentication_authorisation_Oct_210725Entities1())
+            {
+                List<tblLogin> lglist = dbo.tblLogins.ToList();
+
+
+                return View(lglist);
+            }
+        }
+        public ActionResult Home()
+        {
             return View();
         }
         [HttpGet]

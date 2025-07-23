@@ -6,19 +6,20 @@ using System.Web.Mvc;
 
 namespace Auth_oct210725.Controllers
 {
-    [Authorize(Roles ="HOD, Teacher")]
-    public class TeacherController : Controller
+    public class AccountController : Controller
     {
-        // GET: Teacher
+        // GET: Account
         public ActionResult Index()
         {
             return View();
         }
-        //HOD & Teacher only
-        public ActionResult updateMarks()
+        public ActionResult AddStudent()
         {
             return View();
         }
-
+        public ActionResult setRole()
+        {
+            return View();
+        }
     }
 }
